@@ -1,92 +1,142 @@
 /* estilo.css */
+
+/* Variables CSS para temas */
+:root {
+    --bg-color: #e0f2f7;
+    --text-color: #333;
+    --header-bg: #0056b3;
+    --nav-bg: #007bff;
+    --nav-hover-bg: #003d82;
+    --section-bg: #fff;
+    --section-border: #cceeff;
+    --h2-color: #007bff;
+    --h3-color: #0056b3;
+    --h4-color: #004085;
+    --code-bg: #f8f8f8;
+    --code-border: #e1e4e8;
+    --inline-code-bg: #e6e6e6;
+    --inline-code-color: #c7254e;
+    --footer-bg: #333;
+    --footer-border: #007bff;
+    --button-bg: #007bff;
+    --button-color: #fff;
+    --button-hover-bg: #0056b3;
+}
+
+
+body.dark-mode {
+    --bg-color: #2c3e50; 
+    --text-color: #ecf0f1; 
+    --header-bg: #34495e; 
+    --nav-bg: #22313f; 
+    --nav-hover-bg: #1a252f;
+    --section-bg: #3b506b; 
+    --section-border: #4a6684;
+    --h2-color: #85c1e9; 
+    --h3-color: #aebcce;
+    --h4-color: #cad2da;
+    --code-bg: #2f3f4e;
+    --code-border: #445465;
+    --inline-code-bg: #4a6684;
+    --inline-code-color: #e8a2b5; 
+    --footer-bg: #1f2a38;
+    --footer-border: #85c1e9;
+    --button-bg: #85c1e9;
+    --button-color: #2c3e50;
+    --button-hover-bg: #63a4d4;
+}
+
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e0f2f7; /* Un color de fondo suave y claro */
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.5s ease, color 0.5s ease; 
 }
 
 header {
-    background-color: #0056b3; /* Un azul más oscuro para la cabecera */
-    color: #fff;
-    padding: 1.5em 0; /* Más padding para mayor espacio */
+    background-color: var(--header-bg);
+    color: var(--text-color); 
+    padding: 1.5em 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para la cabecera */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative; 
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em; /* Tamaño de fuente más grande para el título principal */
-    letter-spacing: 1px; /* Espaciado de letras */
+    font-size: 2.5em;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style: none;
     padding: 10px;
     text-align: center;
-    background-color: #007bff; /* Azul vibrante para la barra de navegación */
-    margin-top: 1em; /* Espacio entre el título y la navegación */
+    background-color: var(--nav-bg);
+    margin-top: 1em;
 }
 
 nav ul li {
-    display: inline-block; /* Elementos de lista en línea */
-    margin: 0 20px; /* Más margen entre los enlaces */
+    display: inline-block;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--text-color); 
     text-decoration: none;
-    padding: 10px 15px; /* Más padding para los enlaces */
+    padding: 10px 15px;
     display: block;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave y pequeña transformación al pasar el ratón */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #003d82; /* Color de fondo más oscuro al pasar el ratón */
-    transform: translateY(-2px); /* Ligeramente elevado al pasar el ratón */
+    background-color: var(--nav-hover-bg);
+    transform: translateY(-2px);
 }
 
 main {
-    padding: 25px; /* Más padding general */
-    max-width: 1000px; /* Ancho máximo aumentado */
-    margin: 30px auto; /* Más margen superior/inferior */
-    background-color: #fff;
-    border-radius: 10px; /* Bordes más redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    padding: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 section {
-    margin-bottom: 40px; /* Más espacio entre secciones */
-    padding-bottom: 30px; /* Más padding inferior en secciones */
-    border-bottom: 1px solid #cceeff; /* Un borde más suave y con color */
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--section-border);
 }
 
 section:last-child {
-    border-bottom: none; /* Elimina el borde inferior de la última sección */
+    border-bottom: none;
 }
 
 h2 {
-    color: #007bff; /* Azul vibrante para los títulos de sección */
+    color: var(--h2-color);
     font-size: 2em;
     margin-bottom: 1em;
-    border-bottom: 2px solid #007bff; /* Subrayado para los títulos de sección */
+    border-bottom: 2px solid var(--h2-color);
     padding-bottom: 0.5em;
 }
 
 h3 {
-    color: #0056b3; /* Un azul ligeramente más oscuro para los subtítulos */
+    color: var(--h3-color);
     font-size: 1.5em;
     margin-top: 1.5em;
     margin-bottom: 0.8em;
 }
 
 h4 {
-    color: #004085; /* Un azul aún más oscuro para los sub-subtítulos */
+    color: var(--h4-color);
     font-size: 1.2em;
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -94,16 +144,16 @@ h4 {
 
 p {
     margin-bottom: 1em;
-    line-height: 1.7; /* Mayor interlineado para mejor legibilidad */
+    line-height: 1.7;
 }
 
 ul {
-    list-style: disc; /* Estilo de lista por defecto */
-    margin-left: 25px; /* Indentación para listas */
+    list-style: disc;
+    margin-left: 25px;
     margin-bottom: 1em;
 }
 
-ul ul { /* Para listas anidadas */
+ul ul {
     list-style: circle;
     margin-left: 20px;
 }
@@ -113,33 +163,157 @@ li {
 }
 
 pre {
-    background-color: #f8f8f8; /* Fondo más claro para bloques de código */
-    border: 1px solid #e1e4e8; /* Borde sutil */
+    background-color: var(--code-bg);
+    border: 1px solid var(--code-border);
     padding: 15px;
-    border-radius: 8px; /* Bordes más redondeados */
-    overflow-x: auto; /* Permite desplazamiento horizontal si el código es muy largo */
-    font-family: 'Fira Code', 'Courier New', Courier, monospace; /* Fuente monoespaciada para código */
-    color: #444; /* Color de texto más suave */
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    color: var(--text-color); 
     line-height: 1.4;
     font-size: 0.95em;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra interior sutil */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 code {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
-    background-color: #e6e6e6; /* Fondo para código en línea */
+    background-color: var(--inline-code-bg);
     padding: 2px 5px;
     border-radius: 3px;
-    color: #c7254e; /* Color distintivo para código en línea */
+    color: var(--inline-code-color);
     font-size: 0.9em;
 }
 
 footer {
     text-align: center;
-    padding: 25px; /* Más padding */
-    background-color: #333;
-    color: #fff;
-    margin-top: 30px; /* Más margen superior */
-    border-top: 5px solid #007bff; /* Borde superior con el color primario */
+    padding: 25px;
+    background-color: var(--footer-bg);
+    color: var(--text-color); 
+    margin-top: 30px;
+    border-top: 5px solid var(--footer-border);
     font-size: 0.9em;
+}
+
+/* Estilos para el botón de cambio de tema */
+#theme-toggle {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    right: 20px;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+#theme-toggle:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-52%) scale(1.02);
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+    }
+
+    main {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    #theme-toggle {
+        position: static; 
+        margin: 15px auto 0; 
+        display: block;
+        transform: none; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 5px 0;
+    }
+
+    nav ul {
+        padding: 5px;
+    }
+
+    section {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+.header-controls {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+
+#wiki-search {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 250px;
+    max-width: 80%; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--section-bg); 
+    color: var(--text-color);
+}
+
+#wiki-search::placeholder {
+    color: #888;
+}
+
+#wiki-search:focus {
+    border-color: var(--h2-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+
+#theme-toggle {
+    position: static; 
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .header-controls {
+        flex-direction: column; 
+        gap: 10px;
+    }
 }
