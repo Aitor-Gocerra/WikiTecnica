@@ -1,0 +1,9 @@
+{
+  "comandosLinux": [
+    { "comando": "ls", "descripcion": "Lista los archivos del directorio" },
+    { "comando": "cd", "descripcion": "Cambia de directorio" },
+    { "comando": "pwd", "descripcion": "Muestra el directorio de trabajo actual" },
+    { "comando": "mkdir", "descripcion": "Crea un nuevo directorio" },
+    { "comando": "rm", "descripcion": "Elimina archivos o directorios" }
+  ]
+}

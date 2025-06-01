@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Wikicerra de Aitor-Gocerra</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>La Wikicerra de Aitor-Gocerra</h1>
+        <nav>
+            <ul>
+                <li><a href="#programacion">Programación</a></li>
+                <li><a href="#sistemas">Sistemas Informáticos</a></li>
+                <li><a href="#bases-datos">Bases de Datos</a></li>
+                <li><a href="#lenguajes-marcas">Lenguajes de Marcas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="programacion">
+            <h2>Programación</h2>
+            <h3>Conceptos Clave</h3>
+            <p>La programación es el proceso de diseñar, codificar, depurar y mantener el código fuente de programas de computadora. Implica una serie de conceptos fundamentales que son la base para construir cualquier aplicación. [cite: 6]</p>
+            <h4>Tipos de Datos</h4>
+            <p>Los tipos de datos son la clasificación de los datos que se pueden utilizar en un programa, lo que afecta cómo se almacenan y manipulan. [cite: 6]</p>
+            <ul>
+                <li><strong>Enteros (Integer):</strong> Números sin decimales, como <code>5</code>, <code>-100</code>.</li>
+                <li><strong>Flotantes (Float/Double):</strong> Números con decimales, como <code>3.14</code>, <code>-0.5</code>.</li>
+                <li><strong>Cadenas de Texto (String):</strong> Secuencias de caracteres, como <code>"Hola mundo"</code>, <code>"Programación"</code>.</li>
+                <li><strong>Booleanos (Boolean):</strong> Valores de verdad, <code>true</code> o <code>false</code>.</li>
+            </ul>
+            <h4>Estructuras de Control</h4>
+            <p>Las estructuras de control determinan el flujo de ejecución de un programa. [cite: 6]</p>
+            <ul>
+                <li><strong>Condicionales (<code>if</code>, <code>else if</code>, <code>else</code>):</strong> Permiten ejecutar bloques de código basados en una condición.</li>
+                <li><strong>Bucles (<code>for</code>, <code>while</code>, <code>do-while</code>):</strong> Permiten repetir bloques de código varias veces.</li>
+            </ul>
+            <h4>Funciones</h4>
+            <p>Las funciones son bloques de código reutilizables que realizan una tarea específica. Ayudan a organizar el código y a evitar la duplicación. [cite: 6]</p>
+
+            <h3>Sintaxis Básica (en pseudocódigo o JavaScript)</h3>
+            <p>Aquí se muestran ejemplos de la sintaxis básica para los conceptos clave. [cite: 7]</p>
+            <h4>Condicionales (Pseudocódigo)</h4>
+            <pre><code>
+SI (condicion ES VERDADERO) ENTONCES
+    // hacer algo
+SINO SI (otra_condicion ES VERDADERO) ENTONCES
+    // hacer otra cosa
+SINO
+    // hacer algo diferente
+FIN_SI
+            </code></pre>
+            <h4>Bucle For (JavaScript)</h4>
+            <pre><code>
+for (let i = 0; i < 5; i++) {
+    console.log("Iteración número: " + i);
+}
+            </code></pre>
+            <h4>Función (JavaScript)</h4>
+            <pre><code>
+function sumar(a, b) {
+    return a + b;
+}
+let resultado = sumar(5, 3); // resultado será 8
+console.log(resultado);
+            </code></pre>
+
+            <h3>Ejemplos Simples de Código Comentado</h3>
+            <pre><code>
+// Este es un ejemplo de una función simple en JavaScript [cite: 7]
+function saludarUsuario(nombre) {
+    // La función toma un argumento 'nombre'
+    console.log("¡Hola, " + nombre + "!"); // Imprime un saludo en la consola
+}
+
+// Llamada a la función
+saludarUsuario("Ana"); // Esto imprimirá "¡Hola, Ana!" en la consola
+
+// Ejemplo de un bucle 'while' para contar hasta 3
+let contador = 0;
+while (contador < 3) {
+    console.log("Contador: " + contador);
+    contador++; // Incrementa el contador en 1
+}
+            </code></pre>
+        </section>
+
+        <section id="sistemas">
+            <h2>Sistemas Informáticos</h2>
+            <p>Esta sección cubre los conceptos fundamentales de los sistemas informáticos, incluyendo el uso de comandos básicos de Linux y nociones de redes, software y hardware. [cite: 8]</p>
+            <h3>Comandos de Linux Básicos</h3>
+            <p>Estos son algunos comandos esenciales para navegar y gestionar archivos en un sistema Linux. [cite: 8] Los siguientes comandos se cargan dinámicamente desde <code>datos.json</code>. [cite: 11]</p>
+            <div id="comandos-linux-container">
+                </div>
+            <h3>Conceptos de Redes, Software y Hardware</h3>
+            <h4>Redes</h4>
+            <p>Una red informática es un conjunto de equipos conectados por medio de cables, señales, ondas o cualquier otro método de transporte de datos, que comparten información, recursos y servicios. [cite: 8]</p>
+            <ul>
+                <li><strong>IP (Protocolo de Internet):</strong> Identificador único para cada dispositivo en una red.</li>
+                <li><strong>HTTP/HTTPS:</strong> Protocolos para la comunicación web.</li>
+                <li><strong>Routers y Switches:</strong> Dispositivos que dirigen el tráfico en una red.</li>
+            </ul>
+            <h4>Software</h4>
+            <p>El software es la parte lógica de un sistema informático, que incluye el conjunto de programas, instrucciones y reglas informáticas. [cite: 8]</p>
+            <ul>
+                <li><strong>Sistemas Operativos:</strong> Como Windows, macOS, Linux.</li>
+                <li><strong>Aplicaciones:</strong> Programas diseñados para tareas específicas (navegadores web, procesadores de texto).</li>
+                <li><strong>Lenguajes de Programación:</strong> Herramientas para escribir software (Python, Java, C++).</li>
+            </ul>
+            <h4>Hardware</h4>
+            <p>El hardware se refiere a los componentes físicos y tangibles de un sistema informático. [cite: 8]</p>
+            <ul>
+                <li><strong>CPU (Unidad Central de Procesamiento):</strong> El "cerebro" del ordenador.</li>
+                <li><strong>RAM (Memoria de Acceso Aleatorio):</strong> Almacenamiento temporal para datos y programas en ejecución.</li>
+                <li><strong>Dispositivos de Almacenamiento:</strong> Discos duros (HDD), unidades de estado sólido (SSD).</li>
+                <li><strong>Periféricos:</strong> Teclado, ratón, monitor, impresora.</li>
+            </ul>
+        </section>
+
+        <section id="bases-datos">
+            <h2>Bases de Datos</h2>
+            <p>Las bases de datos son sistemas organizados para almacenar, gestionar y recuperar grandes cantidades de información de manera eficiente. [cite: 9, 10]</p>
+            <h3>Tipos de Bases de Datos</h3>
+            <p>Existen diversos modelos y tipos de bases de datos, cada uno con sus propias características y aplicaciones. [cite: 9]</p>
+            <ul>
+                <li><strong>Bases de Datos Relacionales (SQL):</strong> Organizaciones de datos en tablas con filas y columnas, y relaciones entre ellas. Ejemplos: MySQL, PostgreSQL, SQL Server. [cite: 9]</li>
+                <li><strong>Bases de Datos NoSQL:</strong> Ofrecen flexibilidad y escalabilidad, sin el esquema fijo de las relacionales. Ejemplos: MongoDB (documentos), Cassandra (columnas anchas), Redis (clave-valor). [cite: 9]</li>
+            </ul>
+            <h3>Ejemplos de Sentencias SQL Básicas</h3>
+            <p>SQL (Structured Query Language) es el lenguaje estándar para interactuar con bases de datos relacionales. [cite: 9]</p>
+            <h4>SELECT</h4>
+            <p>Se utiliza para recuperar datos de una o más tablas. [cite: 9]</p>
+            <pre><code>
+-- Selecciona todas las columnas de la tabla 'usuarios'
+SELECT * FROM usuarios; [cite: 9]
+
+-- Selecciona solo el nombre y el correo electrónico de la tabla 'clientes'
+SELECT nombre, email FROM clientes WHERE edad > 30;
+            </code></pre>
+            <h4>INSERT</h4>
+            <p>Se utiliza para añadir nuevas filas de datos a una tabla. [cite: 9]</p>
+            <pre><code>
+-- Inserta un nuevo producto con nombre y precio
+INSERT INTO productos (nombre, precio) VALUES ('Teclado', 25.99); [cite: 9]
+
+-- Inserta un nuevo usuario con todos los campos
+INSERT INTO usuarios (id, nombre, apellido, email) VALUES (1, 'Juan', 'Perez', 'juan.perez@example.com');
+            </code></pre>
+            <h4>UPDATE</h4>
+            <p>Se utiliza para modificar datos existentes en una tabla.</p>
+            <pre><code>
+-- Actualiza el precio de un producto específico
+UPDATE productos SET precio = 29.99 WHERE nombre = 'Teclado';
+            </code></pre>
+            <h4>DELETE</h4>
+            <p>Se utiliza para eliminar filas de datos de una tabla.</p>
+            <pre><code>
+-- Elimina un usuario con un ID específico
+DELETE FROM usuarios WHERE id = 5;
+            </code></pre>
+
+            <h3>Conceptos Clave</h3>
+            <ul>
+                <li><strong>Clave Primaria (Primary Key):</strong> Es una columna o conjunto de columnas en una tabla que identifica de forma única cada fila en esa tabla. No puede contener valores nulos y sus valores deben ser únicos. [cite: 10]</li>
+                <li><strong>Clave Foránea (Foreign Key):</strong> Es una columna o conjunto de columnas en una tabla que se refiere a la clave primaria de otra tabla. Establece una relación entre dos tablas. [cite: 10]</li>
+                <li><strong>Relaciones:</strong> Conexiones lógicas entre tablas, generalmente establecidas mediante claves primarias y foráneas, que definen cómo los datos de una tabla se relacionan con los datos de otra. [cite: 10]
+                    <ul>
+                        <li><strong>Uno a Uno (1:1):</strong> Una fila en la tabla A se relaciona con una sola fila en la tabla B.</li>
+                        <li><strong>Uno a Muchos (1:N):</strong> Una fila en la tabla A se relaciona con muchas filas en la tabla B.</li>
+                        <li><strong>Muchos a Muchos (M:N):</strong> Muchas filas en la tabla A se relacionan con muchas filas en la tabla B (requiere una tabla intermedia).</li>
+                    </ul>
+                </li>
+                <li><strong>Esquema:</strong> La estructura o el diseño de una base de datos, incluyendo las tablas, columnas, tipos de datos, relaciones y restricciones.</li>
+            </ul>
+        </section>
+
+        <section id="lenguajes-marcas">
+            <h2>Lenguajes de Marcas</h2>
+            <p>Los lenguajes de marcas son sistemas para anotar documentos de una manera que sea sintácticamente distinguible del texto. Son utilizados para definir la estructura y presentación de la información. [cite: 3]</p>
+            <h3>Componentes HTML</h3>
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Define la estructura del contenido web. [cite: 3, 10]</p>
+            <ul>
+                <li><strong>Elementos:</strong> Son la base de HTML, formados por una etiqueta de apertura, contenido y una etiqueta de cierre (ej. <code>&lt;p&gt;Párrafo&lt;/p&gt;</code>).</li>
+                <li><strong>Etiquetas (Tags):</strong> Palabras clave que definen cómo un navegador web debe formatear y mostrar el contenido. Ejemplos: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;div&gt;</code>.</li>
+                <li><strong>Atributos:</strong> Proporcionan información adicional sobre los elementos HTML y se colocan dentro de la etiqueta de apertura (ej. <code>&lt;a href="pagina.html"&gt;</code>).</li>
+                <li><strong>Estructura Semántica:</strong> HTML5 introdujo etiquetas semánticas para dar significado a la estructura del contenido, como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>. [cite: 3]</li>
+            </ul>
+            <h4>Ejemplo de Estructura HTML Básica</h4>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Título de la Página&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;p&gt;Contenido principal aquí.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2025&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+
+            <h3>CSS (Cascading Style Sheets)</h3>
+            <p>CSS es un lenguaje de hojas de estilo utilizado para describir la presentación de un documento escrito en HTML. Permite controlar el diseño, los colores, las fuentes y otros aspectos visuales. [cite: 4, 10]</p>
+            <ul>
+                <li><strong>Selectores:</strong> Apuntan a los elementos HTML a los que se les aplicarán estilos (ej. <code>body</code>, <code>h1</code>, <code>.clase</code>, <code>#id</code>).</li>
+                <li><strong>Propiedades y Valores:</strong> Las propiedades definen qué aspecto del elemento se va a estilizar (ej. <code>color</code>, <code>font-size</code>) y los valores son la configuración para esa propiedad (ej. <code>blue</code>, <code>16px</code>).</li>
+                <li><strong>Modelos de Caja (Box Model):</strong> Define cómo los elementos HTML son tratados como cajas con propiedades de margen, borde, relleno y contenido.</li>
+                <li><strong>Diseño Responsivo:</strong> Uso de CSS para que el diseño de la web se adapte a diferentes tamaños de pantalla (mediante media queries).</li>
+            </ul>
+            <h4>Ejemplo de Estilo CSS Básico</h4>
+            <pre><code>
+/* estilo.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f7; /* Un color de fondo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #007bff; /* Azul vibrante para los títulos */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #0056b3; /* Un azul más oscuro para la barra de navegación */
+}
+
+nav ul li {
+    display: inline-block; /* Elementos de lista en línea */
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+nav ul li a:hover {
+    background-color: #003d82; /* Color de fondo al pasar el ratón */
+    border-radius: 5px;
+}
+
+section {
+    background-color: #fff;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    max-width: 900px;
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+    border-top: 5px solid #007bff; /* Borde superior con color primario */
+}
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tu Wiki Técnica Personal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

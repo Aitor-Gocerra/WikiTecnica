@@ -1,0 +1,145 @@
+/* estilo.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f7; /* Un color de fondo suave y claro */
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background-color: #0056b3; /* Un azul más oscuro para la cabecera */
+    color: #fff;
+    padding: 1.5em 0; /* Más padding para mayor espacio */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para la cabecera */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño de fuente más grande para el título principal */
+    letter-spacing: 1px; /* Espaciado de letras */
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff; /* Azul vibrante para la barra de navegación */
+    margin-top: 1em; /* Espacio entre el título y la navegación */
+}
+
+nav ul li {
+    display: inline-block; /* Elementos de lista en línea */
+    margin: 0 20px; /* Más margen entre los enlaces */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Más padding para los enlaces */
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave y pequeña transformación al pasar el ratón */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+}
+
+nav ul li a:hover {
+    background-color: #003d82; /* Color de fondo más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Ligeramente elevado al pasar el ratón */
+}
+
+main {
+    padding: 25px; /* Más padding general */
+    max-width: 1000px; /* Ancho máximo aumentado */
+    margin: 30px auto; /* Más margen superior/inferior */
+    background-color: #fff;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+section {
+    margin-bottom: 40px; /* Más espacio entre secciones */
+    padding-bottom: 30px; /* Más padding inferior en secciones */
+    border-bottom: 1px solid #cceeff; /* Un borde más suave y con color */
+}
+
+section:last-child {
+    border-bottom: none; /* Elimina el borde inferior de la última sección */
+}
+
+h2 {
+    color: #007bff; /* Azul vibrante para los títulos de sección */
+    font-size: 2em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #007bff; /* Subrayado para los títulos de sección */
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    color: #0056b3; /* Un azul ligeramente más oscuro para los subtítulos */
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+h4 {
+    color: #004085; /* Un azul aún más oscuro para los sub-subtítulos */
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.7; /* Mayor interlineado para mejor legibilidad */
+}
+
+ul {
+    list-style: disc; /* Estilo de lista por defecto */
+    margin-left: 25px; /* Indentación para listas */
+    margin-bottom: 1em;
+}
+
+ul ul { /* Para listas anidadas */
+    list-style: circle;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+pre {
+    background-color: #f8f8f8; /* Fondo más claro para bloques de código */
+    border: 1px solid #e1e4e8; /* Borde sutil */
+    padding: 15px;
+    border-radius: 8px; /* Bordes más redondeados */
+    overflow-x: auto; /* Permite desplazamiento horizontal si el código es muy largo */
+    font-family: 'Fira Code', 'Courier New', Courier, monospace; /* Fuente monoespaciada para código */
+    color: #444; /* Color de texto más suave */
+    line-height: 1.4;
+    font-size: 0.95em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra interior sutil */
+}
+
+code {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    background-color: #e6e6e6; /* Fondo para código en línea */
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #c7254e; /* Color distintivo para código en línea */
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 25px; /* Más padding */
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px; /* Más margen superior */
+    border-top: 5px solid #007bff; /* Borde superior con el color primario */
+    font-size: 0.9em;
+}
